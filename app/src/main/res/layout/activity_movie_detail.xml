@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_movie_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.velichkov.kaloyan.movies.MovieDetailActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="Заглавие"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleTextView"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:text="Жанр"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/genreTextView"
+        android:textAlignment="center"
+        android:layout_marginBottom="20dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Артисти:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView11"
+            android:layout_marginRight="10dp"
+            android:textSize="18sp"
+            android:layout_marginBottom="5dp" />
+
+        <TextView
+            android:text="артисти"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/artistsTextView"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <TextView
+        android:text="Описание"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView13"
+        android:textSize="18sp" />
+
+    <TextView
+        android:text="описание"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/descriptionTextView"
+        android:textStyle="normal|italic" />
+
+    <Button
+        android:text="Редактирай"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editButton" />
+
+    <Button
+        android:text="Изтрий"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/deleteButton" />
+
+    <Button
+        android:text="Назад"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/backButton" />
+
+</LinearLayout>
